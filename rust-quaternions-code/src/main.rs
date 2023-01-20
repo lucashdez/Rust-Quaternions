@@ -11,16 +11,14 @@ fn main()
     let n1 = (0f32, 0f32, 1f32);
     let n2 = (0f32, 0f32, 1f32);
 
-    Quaternion::add(&q1, &q2);
+    println!("q1 + q2: {}", Quaternion::add(&q1, &q2));
 
-    Quaternion::product(&q1, &q2);
+    println!("q1 * q2: {}", Quaternion::product(&q1, &q2))
 
-    // NOTE : Imprimir con plotters cada operacion
-
-    // q1r = rotate input q1
+    // q1r = rotate input n1
     // q1c = conjugate q1
     //
-    // q2r = rotation q2
+    // q2r = rotation n2
     // q2c = conjugate q2
     //
     // i1 = multquat(q1,q1r)
